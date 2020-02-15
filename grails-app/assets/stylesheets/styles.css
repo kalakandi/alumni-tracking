@@ -1,0 +1,355 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 Jan, 2020, 8:58:03 PM
+    Author     : Shivay
+*/
+#loginDirectorate, #loginCollege, #signupDirectorate, #signupCollege{
+    display:none;
+}
+.nav-item {
+	padding:1px;
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+#about {
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+
+#about:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Schedule Section
+--------------------------------------------------------------*/
+
+#schedule {
+    margin-top: 65px;
+    margin-bottom: 35px;
+  padding: 10px 10px 10px 10px;
+}
+
+#schedule .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#schedule .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#schedule .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+#schedule .nav-tabs a.active {
+  background-color: #f82249;
+  color: #fff;
+}
+
+#schedule .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+#schedule .tab-pane {
+  transition: ease-in-out .2s;
+}
+
+#schedule .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+  justify-content: center;
+}
+
+#schedule .schedule-item:hover {
+  background-color: #fff;
+}
+
+#schedule .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#schedule .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 20px 0 0 15px;
+}
+
+#schedule .schedule-item .speaker i {
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#schedule .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#schedule .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#schedule .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
+
+
+/* Sections Header
+--------------------------------*/
+
+.section-header {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #f82249;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+
+.section-with-bg {
+  background-color: #f6f7fd;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+  background: #101522;
+  padding: 0 0 0 0;
+  margin-top: 20px;
+  color: #eee;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #040919;
+  padding: 0 0 0 0;
+  width: 100%;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #222636;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+
+#map-section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+#map {
+  height: 350px;
+}
+/* Back to top button */
+
+.bot-preview {
+  position: fixed;
+  display: none;
+  background: #f82249;
+  z-index: 5;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.bot-preview i {
+  padding: auto auto;
+  margin: 13px 0 13px 0;
+}
+
+.bot-preview:focus {
+  background: #e0072f;
+  color: #fff;
+  outline: none;
+}
+
+.bot-preview:hover {
+  background: #e0072f;
+  color: #fff;
+}
+
+.picture-container {
+    position: relative;
+    cursor: pointer;
+    text-align: center; }
+.picture {
+    width: 106px;
+    height: 106px;
+    background-color: #999999;
+    border: 4px solid #2ca8ff;
+    color: #FFFFFF;
+    border-radius: 5%;
+    margin: 5px auto;
+    overflow: hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s; }
+
+.picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+ .picture-src {
+    width: 100%; }
+ 
+ .baksa {
+     margin-top: 15px;
+     margin-bottom: 15px;
+     
+ }
+ 
+ .badabaksa {
+     margin-top: 5px;
+     margin-bottom: 5px;
+     padding-top:5px;
+     padding-bottom: 5px;
+ }
+ .card.chat-room .members-panel-1,
+.card.chat-room .chat-1 {
+position: relative;
+overflow-y: scroll; }
+
+.card.chat-room .members-panel-1 {
+height: 570px; }
+
+.card.chat-room .chat-1 {
+height: 495px; }
+
+.card.chat-room .friend-list li {
+border-bottom: 1px solid #e0e0e0; }
+.card.chat-room .friend-list li:last-of-type {
+border-bottom: none; }
+
+.scrollbar-light-blue::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px; }
+
+.scrollbar-light-blue::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+.scrollbar-light-blue::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #82B1FF; }
+
+.rare-wind-gradient {
+background-image: -webkit-gradient(linear, left bottom, left top, from(#a8edea), to(#fed6e3));
+background-image: -webkit-linear-gradient(bottom, #a8edea 0%, #fed6e3 100%);
+background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); }
